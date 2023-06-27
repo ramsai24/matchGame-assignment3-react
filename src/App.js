@@ -1,3 +1,4 @@
+import Matchgame from './components/matchgame'
 import './App.css'
 
 // These are the lists used in the application. You can move them to any component needed.
@@ -247,6 +248,6 @@ const imagesList = [
 ]
 
 // Replace your code here
-const App = () => <div>Hello World</div>
+const App = () => <Matchgame imagesList={imagesList} tabsList={tabsList} />
 
 export default App
