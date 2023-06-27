@@ -114,7 +114,9 @@ class Matchgame extends Component {
             />
             <ul className="score-timer-container">
               <li>
-                <p>{`Score:${score}`}</p>
+                {/* <p>{`Score:${score}`}</p> */}
+                <p>{`Score: `}</p>
+                <p>{`${score}`}</p>
               </li>
               <li className="timer-container">
                 <img
