@@ -53,7 +53,8 @@ class Matchgame extends Component {
   matchWithMatchedImage = id => {
     console.log(id)
     const {matchId, imagesList, timer} = this.state
-    const randomNum = Math.ceil(Math.random() * imagesList.length) - 1
+    const randomNum = Math.floor(Math.random() * imagesList.length)
+
     if (id === matchId) {
       this.setState(prev => ({
         score: parseInt(prev.score) + 1,

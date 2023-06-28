@@ -10,7 +10,12 @@ const ImageItems = props => {
 
   return (
     <li>
-      <button type="button" className="thumbnail-btn" onClick={thumbnailId}>
+      <button
+        type="button"
+        data-testid="thumbnail"
+        className="thumbnail-btn"
+        onClick={thumbnailId}
+      >
         <img className="thumbnailImg" src={thumbnailUrl} alt="thumbnail" />
       </button>
     </li>
